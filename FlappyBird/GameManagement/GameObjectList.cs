@@ -6,8 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-class GameObjectList : GameObject
-{
+class GameObjectList : GameObject {
 
     private List<GameObject> children;
 

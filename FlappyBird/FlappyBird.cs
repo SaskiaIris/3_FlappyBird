@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using FlappyBird.GameStates;
 
 namespace FlappyBird
 {
@@ -13,15 +14,14 @@ namespace FlappyBird
         /// LoadContent will be called once per game and is the place to load
         /// all of your content.
         /// </summary>
-        protected override void LoadContent()
-        {
+        protected override void LoadContent() {
             base.LoadContent();
             screen.X = 640;
             screen.Y = 480;
             ApplyResolutionSettings();
 
-            // TODO: Add gamestates here
-
+			// TODO: Add gamestates here
+			gameStateList.Add(new PlayingState());
         }
       
     }
